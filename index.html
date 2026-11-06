@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Developer & Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#main" class="logo">
+                <i class="fa-solid fa-code"></i> Michael <span>Bayla</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#main" class="nav-btn active">Main</a>
+                <a href="#about" class="nav-btn">About</a>
+                <a href="#projects" class="nav-btn">Projects</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="main" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Michael Bayla</span></h1>
+                <p class="subtitle">Full-Stack Developer & UI/UX Specialist crafting scalable web applications and clean digital experiences.</p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About <span>Me</span></h2>
+                    <p>A closer look at my background, learning journey, and personal life.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text text-center">
+                        <h3>Aspiring Developer passionate about web design and modern technology</h3>
+                        
+                        <p><strong>Background & Roots:</strong> Hi, I'm Michael Bayla, a 20-year-old developer currently focusing on building and practicing modern web development. My interest in computers started early, and I've been dedicated to mastering how websites are designed and built from the ground up.</p>
+                        
+                        <p><strong>Learning & Skills Journey:</strong> I spend my time practicing frontend and backend technologies, working on responsive websites, and converting creative layouts into functional code. Every small project is a step forward in strengthening my technical foundation.</p>
+                        
+                        <p><strong>Development Philosophy:</strong> I believe learning to code is an ongoing process of trial, error, and improvement. I strive to write simple, clean code while focusing on user-friendly layouts and smooth browser performance.</p>
+                        
+                        <p><strong>Life Outside Coding:</strong> Outside of practicing code and experimenting with web tools, I enjoy learning about new tech trends, playing casual video games, listening to music, and spending quality time with family and friends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Empty) -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured <span>Projects</span></h2>
+                    <p>Projects coming soon...</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Empty section for future projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact <span>Me</span></h2>
+                    <p>Have a project in mind or want to collaborate? Send me a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>michael.bayla@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Davao City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <h4>Social Links</h4>
+                                <div class="social-links">
+                                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Michael Bayla. Built with HTML, CSS, & JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
